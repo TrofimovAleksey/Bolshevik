@@ -1,0 +1,259 @@
+.plan {
+  color: #000;
+  &__info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 0 55px;
+  }
+  &__list {
+    float: left;
+    width: 48.63%;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    & + .plan__list {
+      float: right;
+    }
+  }
+  &__list-wrap {
+    margin: 0 0 38px;
+  }
+  &__item {
+    position: relative;
+
+    padding: 0 0 0 25px;
+
+    font-size: 22px;
+    line-height: 36px;
+    &::before {
+      position: absolute;
+      top: 13px;
+      left: 0;
+
+      width: 10px;
+      height: 10px;
+
+      border-radius: 50%;
+      background: #dc0024;
+
+      content: "";
+    }
+  }
+  &__table {
+    width: 100%;
+
+    font-size: 23px;
+    line-height: 40px;
+
+    border-spacing: 0 4px;
+    border-collapse: separate;
+    tr {
+      &:nth-child(odd) {
+        background: #b5b5b5;
+      }
+      &:nth-child(even) {
+        background: #d3d3d3;
+      }
+    }
+    td {
+      &:nth-child(odd) {
+        width: 55%;
+        padding: 0 0 0 100px;
+      }
+      &:nth-child(even) {
+        width: 45%;
+
+        text-align: center;
+
+        cursor: pointer;
+      }
+    }
+  }
+  // Slider
+  &__slider {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+  &__slider-wrap {
+    height: 100%;
+    padding: 0 0 450px;
+  }
+  &__slider-item {
+    height: 100%;
+    padding: 0 55px;
+    a {
+      display: block;
+      height: 100%;
+
+      text-align: center;
+    }
+    img {
+      display: inline-block;
+      width: auto;
+      height: 100%;
+      max-width: 100%;
+
+      vertical-align: middle;
+    }
+  }
+}
+@media(min-width: 768px) and (max-height: 840px) {
+  .plan {
+    &__info {
+      padding: 0 20px;
+    }
+  }
+}
+@media (max-width: 1180px) and (max-height: 860px) {
+  .plan {
+    &__list-wrap {
+      margin: 0 0 15px;
+    }
+    &__item {
+      line-height: 30px;
+    }
+    &__table {
+      line-height: 35px;
+
+      border-spacing: 0 2px;
+    }
+    // Slider
+    &__slider-wrap {
+      padding: 0 0 359px;
+    }
+  }
+}
+.ipad.landscape {
+  .plan {
+    &__info {
+      padding: 0 20px;
+    }
+    &__list-wrap {
+      margin: 0 0 15px;
+    }
+    &__item {
+      line-height: 30px;
+    }
+    &__table {
+      line-height: 35px;
+
+      border-spacing: 0 2px;
+    }
+    // Slider
+    &__slider-wrap {
+      padding: 0 0 359px;
+    }
+  }
+}
+@media (max-width: 1160px) {
+  .plan {
+    &__table {
+      font-size: 18px;
+      line-height: 28px;
+      td {
+        &:nth-child(odd) {
+          padding: 0 0 0 50px;
+        }
+      }
+    }
+    &__item {
+      padding: 0 0 0 15px;
+
+      font-size: 18px;
+      line-height: 26px;
+      &::before {
+        top: 11px;
+
+        width: 6px;
+        height: 6px;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .plan {
+    &__info {
+      position: static;
+
+      height: 100%;
+      padding: 0;
+
+      font-size: 0;
+      text-align: center;
+      &::before {
+        display: inline-block;
+        height: 100%;
+
+        vertical-align: middle;
+
+        content: "";
+      }
+    }
+    &__list {
+      display: inline-block;
+      float: none;
+      width: auto;
+      min-width: 50%;
+
+      vertical-align: middle;
+      & + .plan__list {
+        float: none;
+      }
+    }
+    .plan__list-wrap {
+      display: inline-block;
+      margin: 0;
+      padding: 8px 0;
+
+      vertical-align: middle;
+    }
+    .plan__item {
+      padding: 0 0 0 17px;
+
+      font-size: 12px;
+      line-height: 20px;
+      text-align: left;
+      &::before {
+        top: 7px;
+
+        width: 7px;
+        height: 7px;
+      }
+    }
+    &__table-wrap {
+      display: table-cell;
+
+      vertical-align: middle;
+      .plan__table {
+        width: 100%;
+
+        font-size: 9px;
+        line-height: 17px;
+
+        border-spacing: 0 2px;
+        td {
+          &:nth-child(odd) {
+            width: 57%;
+            padding: 0 0 0 34px;
+          }
+          &:nth-child(even) {
+            width: auto;
+            padding: 0 0 0 50px;
+          }
+        }
+      }
+    }
+
+    // Slider
+    &__slider-wrap {
+      display: none;
+    }
+  }
+}

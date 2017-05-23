@@ -1,0 +1,55 @@
+  <meta charset="UTF-8">
+  <meta name="author" content="">
+  <meta name="copyright" content="(c)">
+  <script>
+(function(){var a,b,c,d,e,f,g,h,i,j;b=window.device,a={},window.device=a,d=window.document.documentElement,j=window.navigator.userAgent.toLowerCase(),a.ios=function(){return a.iphone()||a.ipod()||a.ipad()},a.iphone=function(){return!a.windows()&&e("iphone")},a.ipod=function(){return e("ipod")},a.ipad=function(){return e("ipad")},a.android=function(){return!a.windows()&&e("android")},a.androidPhone=function(){return a.android()&&e("mobile")},a.androidTablet=function(){return a.android()&&!e("mobile")},a.blackberry=function(){return e("blackberry")||e("bb10")||e("rim")},a.blackberryPhone=function(){return a.blackberry()&&!e("tablet")},a.blackberryTablet=function(){return a.blackberry()&&e("tablet")},a.windows=function(){return e("windows")},a.windowsPhone=function(){return a.windows()&&e("phone")},a.windowsTablet=function(){return a.windows()&&e("touch")&&!a.windowsPhone()},a.fxos=function(){return(e("(mobile;")||e("(tablet;"))&&e("; rv:")},a.fxosPhone=function(){return a.fxos()&&e("mobile")},a.fxosTablet=function(){return a.fxos()&&e("tablet")},a.meego=function(){return e("meego")},a.cordova=function(){return window.cordova&&"file:"===location.protocol},a.nodeWebkit=function(){return"object"==typeof window.process},a.mobile=function(){return a.androidPhone()||a.iphone()||a.ipod()||a.windowsPhone()||a.blackberryPhone()||a.fxosPhone()||a.meego()},a.tablet=function(){return a.ipad()||a.androidTablet()||a.blackberryTablet()||a.windowsTablet()||a.fxosTablet()},a.desktop=function(){return!a.tablet()&&!a.mobile()},a.television=function(){var a;for(television=["googletv","viera","smarttv","internet.tv","netcast","nettv","appletv","boxee","kylo","roku","dlnadoc","roku","pov_tv","hbbtv","ce-html"],a=0;a<television.length;){if(e(television[a]))return!0;a++}return!1},a.portrait=function(){return window.innerHeight/window.innerWidth>1},a.landscape=function(){return window.innerHeight/window.innerWidth<1},a.noConflict=function(){return window.device=b,this},e=function(a){return-1!==j.indexOf(a)},g=function(a){var b;return b=new RegExp(a,"i"),d.className.match(b)},c=function(a){var b=null;g(a)||(b=d.className.replace(/^\s+|\s+$/g,""),d.className=b+" "+a)},i=function(a){g(a)&&(d.className=d.className.replace(" "+a,""))},a.ios()?a.ipad()?c("ios ipad tablet"):a.iphone()?c("ios iphone mobile"):a.ipod()&&c("ios ipod mobile"):a.android()?c(a.androidTablet()?"android tablet":"android mobile"):a.blackberry()?c(a.blackberryTablet()?"blackberry tablet":"blackberry mobile"):a.windows()?c(a.windowsTablet()?"windows tablet":a.windowsPhone()?"windows mobile":"desktop"):a.fxos()?c(a.fxosTablet()?"fxos tablet":"fxos mobile"):a.meego()?c("meego mobile"):a.nodeWebkit()?c("node-webkit"):a.television()?c("television"):a.desktop()&&c("desktop"),a.cordova()&&c("cordova"),f=function(){a.landscape()?(i("portrait"),c("landscape")):(i("landscape"),c("portrait"))},h=Object.prototype.hasOwnProperty.call(window,"onorientationchange")?"orientationchange":"resize",window.addEventListener?window.addEventListener(h,f,!1):window.attachEvent?window.attachEvent(h,f):window[h]=f,f(),"function"==typeof define&&"object"==typeof define.amd&&define.amd?define(function(){return a}):"undefined"!=typeof module&&module.exports?module.exports=a:window.device=a}).call(this);
+  </script>
+  <script>
+    if (!document.querySelector(".ipad")) {
+      document.write('<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimal-ui">');
+    }
+  </script>
+  <meta name="HandheldFriendly" content="True">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="application-name" content="&nbsp;">
+  <meta name="msapplication-tooltip" content="">
+  <meta name="msapplication-window" content="width=400;height=300">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="img/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="img/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="img/icon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="img/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="img/icon/favicon-128x128.png" sizes="128x128">
+  <link rel="icon" type="image/png" href="img/icon/favicon-196x196.png" sizes="196x196">
+  <meta name="msapplication-square70x70logo" content="icon/mstile-70x70.png">
+  <meta name="msapplication-TileImage" content="img/icon/mstile-144x144.png">
+  <meta name="msapplication-square150x150logo" content="img/icon/mstile-150x150.png">
+  <meta name="msapplication-wide310x150logo" content="img/icon/mstile-310x150.png">
+  <meta name="msapplication-square310x310logo" content="img/icon/mstile-310x310.png">
+  <meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+  <meta content="telephone=no" name="format-detection" />
+  <meta name="theme-color" content="#ec1d23" />
+  <style>.preloader{position:fixed;top:0;right:0;bottom:0;left:0;z-index:9999999;display:none;background:#454444;background:-webkit-gradient(left top,left bottom,color-stop(0,#454444),color-stop(100%,#131416));background:linear-gradient(to bottom,#454444 0,#131416 100%)}.preloader__center{position:absolute;top:50%;left:50%;width:200px;height:200px;margin:-100px 0 0 -100px}.preloader__object{position:absolute;top:50%;left:50%;border:5px solid #fff;border-top-color:transparent;border-bottom-color:transparent;border-radius:50%;-webkit-animation:rotate 2s infinite;animation:rotate 2s infinite}.preloader__object--1{width:50px;height:50px;margin:-25px 0 0 -25px}.preloader__object--2{width:70px;height:70px;margin:-35px 0 0 -35px;-webkit-animation-delay:.1s;animation-delay:.1s}.preloader__object--3{width:90px;height:90px;margin:-45px 0 0 -45px;-webkit-animation-delay:.2s;animation-delay:.2s}.preloader__object--4{width:110px;height:110px;margin:-55px 0 0 -55px;-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes rotate{50%{-webkit-transform:rotate(180deg);transform:rotate(180deg)}100%{-webkit-transform:rotate(0);transform:rotate(0)}}@keyframes rotate{50%{-webkit-transform:rotate(180deg);transform:rotate(180deg)}100%{-webkit-transform:rotate(0);transform:rotate(0)}}</style>
+  <link rel="stylesheet" href="css/main.min.css">
+  <script>document.createElement( "picture" );</script>
+  <script src="js/picturefill.min.js" async></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-19663769-14', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+  </script>
+  

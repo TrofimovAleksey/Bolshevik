@@ -1,0 +1,41 @@
+.message {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 900;
+
+  display: none;
+
+  font-size: 0;
+  text-align: center;
+  &::before {
+    display: inline-block;
+    height: 100%;
+
+    vertical-align: middle;
+
+    content: "";
+  }
+  &__text {
+    display: inline-block;
+    margin: 0;
+    padding: 20px 15px;
+
+    background: rgba(0,0,0,.6);
+
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+    vertical-align: middle;
+  }
+}
+@media screen and (orientation: portrait) {
+  .message {
+    display: block;
+
+    background: url(../img/headerslider/1-480-message.jpg) no-repeat 50% 50%;
+    background-size: cover;
+  }
+}

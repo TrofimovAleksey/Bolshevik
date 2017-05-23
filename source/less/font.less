@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "DinCyMd";
+
+  src: url(../font/DinCyMd.ttf);
+}
+@font-face {
+  font-family: "Flaticon";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../font/icon-font/flaticon.eot");
+  src: url("../font/icon-font/flaticon.eot?#iefix") format("embedded-opentype"),
+  url("../font/icon-font/flaticon.woff") format("woff"),
+  url("../font/icon-font/flaticon.ttf") format("truetype"),
+  url("../font/icon-font/flaticon.svg#Flaticon") format("svg");
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+
+    src: url("../font/icon-font/flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before,
+[class^="icon-"]:after,
+[class*=" icon-"]:after {
+  font-family: "Flaticon";
+  font-style: normal;
+}
+
+.icon-arrow-left:before {
+  content: "\f101";
+}
+.icon-arrow-right:before {
+  content: "\f100";
+}
+.icon-phone:before {
+  content: "\f102";
+}

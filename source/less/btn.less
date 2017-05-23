@@ -1,0 +1,77 @@
+.btn {
+  display: inline-block;
+  padding: 13px 17px;
+
+  border: 1px solid #fff;
+  border-radius: 0;
+  background: #000;
+  background: #ec1d23;
+
+  font-size: 15px;
+  line-height: 1;
+  color: #fff;
+  vertical-align: middle;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  &__outer {
+    display: inline-block;
+    padding: 13px 22px;
+
+    background: #231f20;
+
+    vertical-align: middle;
+  }
+  &__wrap {
+    position: absolute;
+    right: 55px;
+    bottom: 0;
+    z-index: 100;
+
+    padding: 15px 0;
+
+    text-align: right;
+    &--top {
+      right: auto;
+      bottom: 135px;
+      left: 55px;
+    }
+  }
+}
+@media(min-width: 768px) and (max-height: 840px) {
+  .btn {
+    &__wrap {
+      right: 20px;
+
+      padding: 5px 0;
+      &--top {
+        bottom: 87px;
+        left: 20px;
+      }
+    }
+  }
+}
+.ipad.landscape {
+  .btn {
+    &__wrap {
+      right: 20px;
+
+      padding: 5px 0;
+      &--top {
+        bottom: 87px;
+        left: 20px;
+      }
+    }
+  }
+}
+@media(max-width: 767px) {
+  .btn {
+    &__outer {
+      display: none;
+    }
+    &__wrap {
+      display: none;
+    }
+  }
+}

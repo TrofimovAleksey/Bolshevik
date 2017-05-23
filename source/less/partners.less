@@ -1,0 +1,61 @@
+.partners {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  padding: 30px 0 38px;
+
+  background: #fff;
+  &__wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 55px;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    font-size: 0;
+
+    list-style: none;
+  }
+  &__item {
+    display: inline-block;
+    width: 20%;
+
+    text-align: center;
+    vertical-align: middle;
+    a {
+      display: block;
+    }
+    img {
+      display: inline-block;
+      height: auto;
+      max-width: 100%;
+
+      vertical-align: middle;
+    }
+  }
+}
+@media(min-width: 768px) and (max-height: 840px) {
+  .partners {
+    padding: 10px 0;
+    &__wrap {
+      padding: 0 20px;
+    }
+  }
+}
+.ipad.landscape {
+  .partners {
+    padding: 10px 0;
+    &__wrap {
+      padding: 0 20px;
+    }
+  }
+}
+@media(max-width: 767px) {
+  .partners {
+    display: none;
+  }
+}

@@ -1,0 +1,45 @@
+<div class="popup" id="popup">
+  <div class="popup__block">
+    <form class="popup__wrap" method="POST" action="reg.php" onsubmit="ga('send', 'event', ' zayavka_bolshevik', 'send'); yaCounter39763700.reachGoal('zyavka_bolshevik');">
+      <a href="#" class="popup__close">Закрыть</a>
+      <fieldset class="popup__fieldset">
+        <legend class="popup__title">Записаться на просмотр</legend>
+        <fieldset class="popup__field">
+          <input class="popup__input" type="text" id="name" required placeholder="Имя">
+        </fieldset>
+        <fieldset class="popup__field">
+          <input class="popup__input" type="phone" id="phone" required placeholder="Телефон">
+        </fieldset>
+        <fieldset class="popup__field">
+          <input class="popup__input" type="email" id="email" required placeholder="Email">
+        </fieldset>
+        <fieldset class="popup__field popup__field-textarea">
+          <textarea class="popup__input popup__textarea" id="message" required placeholder="Сообщение"></textarea>
+        </fieldset>
+        <fieldset class="popup__field">
+          <button class="popup__submit" type="submit">Отправить</button>
+        </fieldset>
+      </fieldset>
+    </form>
+  </div>
+</div>
+<div class="popup" id="slide__popup">
+  <div class="popup__block">
+    <div class="slide__popup-wrap">
+      <a href="#" class="slide__popup-close">Закрыть</a>
+      <button class="popup__arrow popup__arrow--prev">Предыдущая<i class="icon icon-arrow-left"></i></button>
+      <button class="popup__arrow popup__arrow--next">Следующая<i class="icon icon-arrow-right"></i></button>
+      <div class="popup__info"><span data-number></span>/<span data-all></span></div>
+      <div class="slide__popup-img">
+        <img src="" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="popup" id="popup__message">
+  <div class="popup__block">
+    <div class="popup__wrap popup__wrap--message">
+      <div class="popup__message"></div>
+    </div>
+  </div>
+</div>
